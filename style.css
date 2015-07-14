@@ -1,0 +1,30 @@
+body {
+  background-color: #102372
+}
+
+ .tile {
+  width: 200px;
+  height: 200px;
+  background-color: #102372;
+  box-sizing: border-box;
+  transition: 1s transform;
+  transform-origin: 0px 0px;
+  position: relative;
+  color: #102372;
+  font-family: "Lucida Console";
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  touch-action: none;
+  transition: opacity 1s;
+}
+
+.tile:hover .overlay {
+  opacity: 1;
+  touch-action: auto;
+  } 
